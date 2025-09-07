@@ -1,0 +1,106 @@
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/link" xsi:schemaLocation="http://www.sat.gob.mx/link1 http://www.sat.gob.mx/link2" Version="00" Fecha="date" Sello="sellomamadas" SubTotal="81921.55" Moneda="MXN" Total="9879.00" TipoDeComprobante="F" Exportacion="02" MetodoPago="CAR" LugarExpedicion="00000">
+    <cfdi:Emisor Rfc="MDI0803131A9" Nombre="MAYORISTA DE DULCES IZTAPALAPA" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="CORJ000509194" Nombre="JAQUELINE CONTRERAS RIVERA" DomicilioFiscalReceptor="52073" RegimenFiscalReceptor="612" UsoCFDI="G01" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="50161800" NoIdentificacion="0200739" Cantidad="10" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto1" ValorUnitario="59.26" Importe="592.59" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="640.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+                    <cfdi:Traslado Base="592.59" Impuesto="003" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="47.41" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161800" NoIdentificacion="0200738" Cantidad="10" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto2" ValorUnitario="59.26" Importe="592.59" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="640.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+                    <cfdi:Traslado Base="592.59" Impuesto="003" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="47.41" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161800" NoIdentificacion="02007323" Cantidad="10" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto3" ValorUnitario="59.26" Importe="592.59" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="640.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+                    <cfdi:Traslado Base="592.59" Impuesto="003" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="47.41" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161800" NoIdentificacion="02007325" Cantidad="9" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto4" ValorUnitario="59.26" Importe="533.33" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="576.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+                    <cfdi:Traslado Base="533.33" Impuesto="003" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="42.67" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161800" NoIdentificacion="02007313" Cantidad="1" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto5" ValorUnitario="59.26" Importe="59.26" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="64.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+                    <cfdi:Traslado Base="59.26" Impuesto="003" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="4.74" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="0200019" Cantidad="15" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto6" ValorUnitario="60.17" Importe="902.59" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="902.59" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="144.41" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="02000155" Cantidad="10" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto7" ValorUnitario="60.17" Importe="601.72" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="601.72" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="96.28" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="02000181" Cantidad="10" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto8" ValorUnitario="60.17" Importe="601.72" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="601.72" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="96.28" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="03000825" Cantidad="20" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto9" ValorUnitario="70.09" Importe="1401.72" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="1401.72" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="224.28" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="03000822" Cantidad="18" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto10" ValorUnitario="70.09" Importe="1261.55" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="1261.55" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="201.85" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="03000823" Cantidad="10" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto12" ValorUnitario="70.09" Importe="700.86" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="700.86" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="112.14" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="50161815" NoIdentificacion="03000840" Cantidad="12" ClaveUnidad="XDN" Unidad="DIS" Descripcion="Producto13" ValorUnitario="70.09" Importe="841.03" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="841.03" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="134.57" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="1199.45">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="2370.36" Impuesto="003" TipoFactor="Tasa" TasaOCuota="0.080000" Importe="189.64" />
+            <cfdi:Traslado Base="2560.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+            <cfdi:Traslado Base="6311.19" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1009.81" />
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/.xsd" Version="1.1" UUID="0959711E-78" FechaTimbrado="2025-01-07T16:21:42" RfcProvCertif="RICL990426B86" SelloCFD="NnfrGI1hpG/fV/0jlIoCxcrr5QoiQAWlwBkeejwJdTrpiaXHz5cEPo4IDVxwyJEwLGcoKdk7iix2YYWOOytCkZwp4ImpzKUqzFscbZ0jYYRouHXze9Pu12ThBBzs8kzRtxPFaPJUcQOKT3iL4d6wEDbrX9Uw8ssygqzQTaAuKIcqzbrK3WZf58vda8CJLLJBSmi1RN2s5gzFAvreWWS+jXQlWQZUl84Ch02tTdAUZfNjxmoy4Bjncd2GC9t7w/AvHGWIEsKFbhXW9uuifXemhVigYmQDY2UbaX3vKLULrfPmUNEIcV6kz022ZRlk2U/whTri06D8y3WpfI6VdzNApQ==" NoCertificadoSAT="00001000000707891043" SelloSAT="TNt/+fH8PF4SMJJUU9VVsrl4TUmLsq78AJV+uEi/GwJMlv50DasWpROGXn2F1RGbZSYvUtKciBKz9Yuh3ZwWdWAWBLWGRyG63AS+HpfVznCHlJGgDiVrdenLqd4HlZUDjphGxrwTq7uIw9SXRMapcnTt0fCTvJt/1gcRI7bRfLqI+xA3fg29+R97Ugk+fIL0FhKkCbjXMyArSqZgeEh/jkL9BrmiZUh7VoTWryUVM6JynuXHAY6RJdIgTC2giMopVZva7loAtEtQgGJ5XKTEIu8x88dsEqbdnmAR9eFNjXcj2R5Q==" />
+    </cfdi:Complemento>
+</cfdi:Comprobante>
