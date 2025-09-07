@@ -1,6 +1,5 @@
-# Scrapping desde XML para hacer una base de datos
-
-scrapping desde archivos xml con python, para hacer base de datos e importar a plataforma alegra, para la creación de un inventario eficiente.
-
-## ¿Cómo usar?
-- Tener archivos xml en la carpeta de la aplicación
+# 🚨Scrapping desde XML para hacer una base de datos
+_____
+## 🎯 Objetivo
+Crear un sistema que extraiga la información de productos/ servicios desde XML de facturas del SAT y los convierta en un CSV compatible con Alegra, para agilizar la carga de productos.
+_____
