@@ -1,25 +1,26 @@
 import xml.etree.ElementTree as ET
 import pandas as pd
-import csv
 
-tree = ET.parse('ejemplos_facturas/fact.xml')
-root = tree.getroot()
+# Importar datos leyendo desde el archivo XML
+tree = ET.parse('facturas/fact.xml')
+root = tree.getroot() # Etiqueta y atributos del nodo raiz
 
-print(root.tag)
-print(root.attrib)
+# El namespace que usa el SAT en los CFDI
+ns = {'cfdi':'http://www.sat.gob.mx/cfd/4'}
 
-#Imprime hijos de root
-for child in root:
-    print(child.tag, child.attrib)
+conceptos = []
 
-# Direccion (Conceptos)
-conceptos = root[2]
-# Direccion (Conceptos/Impuestos)
-impuestos = conceptos[0][0][0][1]
+# for concepto in root.iter('{http://www.sat.gob.mx/cfd/4}Concepto'):
+#     print(concepto.attrib)
 
-for child in conceptos:
-    print(print(child.tag, child.attrib))
+# Datos necesarios de extraer de etiqueta cfdi:Concepto
+for concepto in root.findall('.//cfdi:Concepto', ns):
+    descripcion = concepto.attrib.get('Descripcion')
+    clave = concepto.attrib.get('ClaveProdServ')
+    unidad = concepto.attrib.get('ClaveUnidad')
+    unitario = float(concepto.attrib.get('ValorUnitario'))
+    
+    conceptos.append({"Descripcion":descripcion, "Clave":clave, "Clave Unidad":unidad, "Valor Unitario":unitario})
 
-
-
-print(impuestos.attrib)
+df = pd.DataFrame(conceptos)
+print(df)
