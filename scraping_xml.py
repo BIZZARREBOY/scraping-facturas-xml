@@ -8,12 +8,12 @@ root = tree.getroot() # Etiqueta y atributos del nodo raiz
 # El namespace que usa el SAT en los CFDI
 ns = {'cfdi':'http://www.sat.gob.mx/cfd/4'}
 
+# Datos necesarios de extraer de etiqueta cfdi:Concepto
 conceptos = []
 
 # for concepto in root.iter('{http://www.sat.gob.mx/cfd/4}Concepto'):
 #     print(concepto.attrib)
 
-# Datos necesarios de extraer de etiqueta cfdi:Concepto
 for concepto in root.findall('.//cfdi:Concepto', ns):
     descripcion = concepto.attrib.get('Descripcion')
     clave = concepto.attrib.get('ClaveProdServ')
@@ -22,5 +22,10 @@ for concepto in root.findall('.//cfdi:Concepto', ns):
     
     conceptos.append({"Descripcion":descripcion, "Clave":clave, "Clave Unidad":unidad, "Valor Unitario":unitario})
 
-df = pd.DataFrame(conceptos)
-print(df)
+# Datos necesarios de extraer de etiqueta cfdi:Traslado
+traslados = []
+
+for traslado in root.findall('.//cfdi:Traslado', ns):
+    tasa = float(traslado.attrib.get('TasaOCuota'))
+    traslados.append({"Tasa":tasa})
+
